@@ -11,14 +11,12 @@ bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("Liste des commandes: \n - .Membres\n - .serveur \n *Ce bot contient des commandes cachées :)*");
+        message.channel.sendMessage("Liste des commandes: \n - .Membres\n - .serveur \n *Ce bot contient des commandes cachées :)");
         console.log("Help effectué !");
     }
 
     if (message.content === prefix + "Membres"){
-        message.channel.sendMessage("- Lotfi (Lxtfi) 
-        "- Fadi(Kazukoo)"
-    "- Aymen(Whitiy)");
+        message.channel.sendMessage("- Lotfi(Lxtfi), Aymen(Whitiy), Fadi(Kazukoo)");
         console.log("Membres effectué");
     }
 
@@ -36,12 +34,6 @@ bot.on('message', message => {
         message.channel.sendMessage("funcraft.net");
         console.log("serveur effectué");
     }
-    
-    if (message.content === prefix + "Lx"){
-        message.reply("Le roux !");
-        console.log("Lx effectué !");
-    }
-
     if (message.content === prefix + "Kazukooo"){
         message.channel.sendMessage("Le jaune ! :p");
         console.log("Kazukooo effectué");
