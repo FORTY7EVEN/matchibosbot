@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
 
 var bot = new Discord.Client();
+var prefix = ("/")
 
 bot.on("ready", function() {
     bot.user.setGame("MatchiBos, !help");
@@ -11,15 +12,13 @@ bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("Liste des commandes: \n - .Membres\n - .serveur \n *Ce bot contient des commandes cachées :)");
+        message.channel.sendMessage("Liste des commandes: \n - /Membres\n - /serveur \n *Ce bot contient des commandes cachées :)");
         console.log("Help effectué !");
     }
-
     if (message.content === prefix + "Membres"){
-        message.channel.sendMessage("- Lotfi(Lxtfi), Aymen(Whitiy), Fadi(Kazukoo)");
+        message.channel.sendMessage("- Lotfi(Lxtfi) \n Aymen(Whitiy) \n Fadi(Kazukoo)");
         console.log("Membres effectué");
     }
-
     if (message.content === prefix + "Bot"){
         message.channel.sendMessage("Ce bot a été crée par Lx.");
         console.log("Bot effectué");
