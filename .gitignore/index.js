@@ -68,12 +68,12 @@ bot.on('message', message => {
   
   
     bot.on("guildMemberAdd", function(member) {
-    member.guild.channels.find("name", "bienvenue").sendMessage(member.toString() + " Bienvenue sur le discord De la MatchiBos ! :white_check_mark:");
+    member.guild.channels.find("name", "bienvenue").sendMessage(member.toString() + " Bienvenue sur le discord De MatchiBos ! :white_check_mark:");
     member.addRole(member.guild.roles.find("name", "●  ⚙️ VISITEUR ⚙️  ●"));
 });
 
 bot.on("guildMemberRemove", function(member) {
-     member.guild.channels.find("name", "bienvenue").sendMessage(member.toString() + " Bye bye!" + member.toString() + " :x:");
+     member.guild.channels.find("name", "depart").sendMessage(member.toString() + " Bye bye!" + member.toString() + " :x:");
 });
 
 
