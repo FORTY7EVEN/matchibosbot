@@ -12,7 +12,7 @@ bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("Liste des commandes: \n - /staff \n - /serveur - \n /membres \n *Ce bot contient des commandes cachées C:");
+        message.channel.sendMessage("Liste des commandes: \n - /staff \n - /serveur \n - /membres \n - /bot \n *Ce bot contient des commandes cachées C:");
         console.log("Help effectué !");
     }
     if (message.content === prefix + "staff"){
