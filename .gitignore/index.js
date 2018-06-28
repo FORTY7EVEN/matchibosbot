@@ -58,7 +58,7 @@ bot.on('message', message => {
         console.log("lxtfi effectué !");
     }
     if (message.content === prefix + "membre"){
-        message.reply(" Fonda :\n - Lotfi(Lxtfi) \n - Aymen(Whitiy) \n - Fadi(Kazukoo) \n Admin : \n Membres :");
+        message.reply("\n Fonda :\n - Lotfi(Lxtfi) \n - Aymen(Whitiy) \n - Fadi(Kazukoo) \n Admin : \n Membres :");
         console.log("membres effectué !");
     }
      if (message.content === "chek chek"){
