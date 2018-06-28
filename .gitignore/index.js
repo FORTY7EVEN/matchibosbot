@@ -24,7 +24,7 @@ bot.on('message', message => {
         console.log("Bot effectué");
     }
 
-    if (message.content === "oh MatchiBos"){
+    if (message.content === "oh matchibos"){
         message.reply("Chek tez Baby");
         console.log("Oh MatchiBos effectué");
     }
@@ -35,7 +35,7 @@ bot.on('message', message => {
     }
     if (message.content ===  "kazukooo"){
         message.reply("Le jaune ! :p");
-        console.log("Kazukooo effectué");
+        console.log("fadi effectué");
     }
     if (message.content === "lotfi"){
         message.reply("Le roux !");
@@ -51,18 +51,18 @@ bot.on('message', message => {
     }
     if (message.content === "whitiy"){
         message.reply("Le nwar ! :p");
-        console.log("whitiy effectué");
+        console.log("aymen effectué");
     }
     if (message.content === "lxtfi"){
         message.reply("Le roux !");
-        console.log("lxtfi effectué !");
+        console.log("lotfi effectué !");
     }
     if (message.content === prefix + "membres"){
         message.reply("\n Fonda :\n - Lotfi(Lxtfi) \n - Aymen(Whitiy) \n - Fadi(Kazukoo) \n Admin : \n Membres :");
         console.log("membres effectué !");
     }
      if (message.content === "chek chek"){
-        message.reply("Banda 16 C:");
+        message.reply("Bonda 16 C:");
         console.log("racim effectué !");
     }
   
