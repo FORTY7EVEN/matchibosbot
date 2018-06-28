@@ -24,36 +24,36 @@ bot.on('message', message => {
         console.log("Bot effectué");
     }
 
-    if (message.content === prefix + "oh MatchiBos"){
-        message.channel.sendMessage("Chek tez Baby");
+    if (message.content === "oh MatchiBos"){
+        message.reply("Chek tez Baby");
         console.log("Oh MatchiBos effectué");
     }
 
     if (message.content === prefix + "serveur"){
-        message.channel.sendMessage("funcraft.net");
+        message.reply("funcraft.net");
         console.log("serveur effectué");
     }
     if (message.content === prefix + "kazukooo"){
-        message.channel.sendMessage("Le jaune ! :p");
+        message.reply("Le jaune ! :p");
         console.log("Kazukooo effectué");
     }
-    if (message.content === prefix + "lotfi"){
+    if (message.content === "lotfi"){
         message.reply("Le roux !");
         console.log("Lotfi effectué !");
     }
-    if (message.content === prefix + "fadi"){
-        message.channel.sendMessage("Le jaune ! :p");
+    if (message.content === "fadi"){
+        message.reply("Le jaune ! :p");
         console.log("Fadi effectué");
     }
-    if (message.content === prefix + "aymen"){
-        message.channel.sendMessage("Le nwar ! :p");
+    if (message.content === "aymen"){
+        message.reply("Le nwar ! :p");
         console.log("aymen effectué");
     }
-    if (message.content === prefix + "whitiy"){
-        message.channel.sendMessage("Le nwar ! :p");
+    if (message.content === "whitiy"){
+        message.reply("Le nwar ! :p");
         console.log("whitiy effectué");
     }
-    if (message.content === prefix + "lxtfi"){
+    if (message.content === "lxtfi"){
         message.reply("Le roux !");
         console.log("lxtfi effectué !");
     }
