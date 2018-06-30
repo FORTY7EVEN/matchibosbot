@@ -3,12 +3,22 @@ const Discord = require("discord.js");
 var bot = new Discord.Client();
 var prefix = ("/")
 
+bot.login(process.env.TOKEN);
+
 bot.on("ready", function() {
     bot.user.setGame("MatchiBos, /help");
     console.log("Le bot a bien ete connecté");
 });
 
-bot.login(process.env.TOKEN);
+bot.on("guildMemberAdd", function(member) {
+    member.guild.channels.find("name", "bienvenue").sendMessage(member.toString() + " Bienvenue sur le discord De MatchiBos ! :white_check_mark:");
+    member.addRole(member.guild.roles.find("name", "●  ⚙️ VISITEUR ⚙️  ●"));
+});
+
+bot.on("guildMemberRemove", function(member) {
+     member.guild.channels.find("name", "depart").sendMessage(member.toString() + " a leave le serveur" + " :x:");
+});
+
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
@@ -58,7 +68,7 @@ bot.on('message', message => {
         console.log("lotfi effectué !");
     }
     if (message.content === prefix + "membres"){
-        message.reply("\n Fonda :\n - Lotfi(Lxtfi) \n - Aymen(Whitiy) \n - Fadi(Kazukoo) \n Admin : \n Membres :");
+        message.reply("\n **Admin** :\n - Lotfi(**Lxtfi**) \n - Aymen(**Whitiy**) \n - Fadi(**Kazukooo**) \n **Modérateur :** \n **Membres :**");
         console.log("membres effectué !");
     }
      if (message.content === "chek chek"){
@@ -67,14 +77,6 @@ bot.on('message', message => {
     }
   
   
-    bot.on("guildMemberAdd", function(member) {
-    member.guild.channels.find("name", "bienvenue").sendMessage(member.toString() + " Bienvenue sur le discord De MatchiBos ! :white_check_mark:");
-    member.addRole(member.guild.roles.find("name", "●  ⚙️ VISITEUR ⚙️  ●"));
-});
-
-bot.on("guildMemberRemove", function(member) {
-     member.guild.channels.find("name", "depart").sendMessage(member.toString() + " Bye bye!" + member.toString() + " :x:");
-});
 
 
 
