@@ -22,7 +22,7 @@ bot.on("guildMemberRemove", function(member) {
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("Liste des commandes: \n - /MEMES \n - /CHWAKER \n - /9heb \n - /bot \n *Ce bot contient des commandes cachées C:");
+        message.channel.sendMessage("Liste des commandes: \n - /MEMES \n - /CHWAKER \n - /n9ocha \n - /bot \n *Ce bot contient des commandes cachées C:");
         console.log("Help effectué !");
     }
     if (message.content === prefix + "CHWAKER"){
@@ -106,6 +106,10 @@ bot.on('message', message => {
     if (message.content === "canon16"){
         message.reply("YBEYENLEK BELI VALABEL !");
         console.log("canon16 effectué !");
+    }
+    if (message.content === prefix + "n9ocha"){
+        message.reply("**JORDAN**");
+        console.log("no9che effectué !");
     }
 
 
