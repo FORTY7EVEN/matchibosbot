@@ -59,23 +59,19 @@ bot.on('message', message => {
         message.reply("**ZEBI**");
         console.log("tedi 150 ? effectué");
     }
-    if (message.content === "ZIZO"){
+    if (message.content === "zizo"){
         message.reply("**DELA3 RAW RALI**");
         console.log("ZIZO effectué");
     }
-    if (message.content === "VERDINO"){
+    if (message.content === "verdino"){
         message.reply("**Rasse ytir rbk !**");
         console.log("verdino effectué !");
-    }
-    if (message.content === prefix + "n9ocha"){
-        message.reply("**JORDAN**");
-        console.log("no9che effectué !");
     }
      if (message.content === "chek chek"){
         message.reply("Bonda 16 C:");
         console.log("racim effectué !");
     }
-    if (message.content === "Verdino2"){
+    if (message.content === "verdino2"){
         message.reply("ja l7mar ydawi derboh te7t le9lawi");
         console.log("verdino effectué !");
     }
@@ -107,12 +103,16 @@ bot.on('message', message => {
         message.reply("**YBEYENLEK BELI VALABEL !**");
         console.log("canon16 effectué !");
     }
-    if (message.content === prefix + "n9ocha"){
+    if (message.content === "no9che"){
         message.reply("**JORDAN**");
         console.log("no9che effectué !");
     }
         if (message.content === prefix + "MASQUER"){
-        message.reply(" **\n - lotfi \n - aymen \n - fadi \n - 3ami 7med \n - lbodi \n - mananuk \n - el boundou9ia 16/canon16 \n - TEDI 150 ? \n - chawala hada? \n - Verdino2 \n - jamel \n ZIZO \n VERDINO **");
+        message.reply(" **\n - lotfi \n - aymen \n - fadi \n - 3ami 7med \n - lbodi \n - mananuk \n - el boundou9ia 16/canon16 \n - TEDI 150 ? \n - chawala hada? \n - Verdino2 \n - jamel \n - ZIZO \n - VERDINO **");
+        console.log("masquer effectué");
+    }
+    if (message.content === prefix + "masquer"){
+        message.reply(" **\n - lotfi \n - aymen \n - fadi \n - 3ami 7med \n - lbodi \n - mananuk \n - el boundou9ia 16/canon16 \n - TEDI 150 ? \n - chawala hada? \n - Verdino2 \n - jamel \n - ZIZO \n - VERDINO **");
         console.log("masquer effectué");
     }
 
