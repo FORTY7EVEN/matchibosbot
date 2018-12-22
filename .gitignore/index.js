@@ -106,6 +106,10 @@ bot.on('message', message => {
     if (message.content === "canon16"){
         message.reply("YBEYENLEK BELI VALABEL !");
         console.log("canon16 effectué !");
+    }
+
+
+   
 
 
 
@@ -113,3 +117,4 @@ bot.on('message', message => {
 
 
 });
+
