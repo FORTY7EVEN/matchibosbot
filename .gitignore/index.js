@@ -22,7 +22,7 @@ bot.on("guildMemberRemove", function(member) {
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("Liste des commandes: \n - /MEMES \n - /CHWAKER \n - /n9ocha \n - /bot \n *Ce bot contient des commandes cachées C:");
+        message.channel.sendMessage("Liste des commandes: \n - /MEMES \n - /CHWAKER \n - / \n - /bot \n *Ce bot contient des commandes cachées C:");
         console.log("Help effectué !");
     }
     if (message.content === prefix + "CHWAKER"){
@@ -40,7 +40,7 @@ bot.on('message', message => {
     }
 
     if (message.content === prefix + "MEMES"){
-        message.reply(" **- VERDINO \n - AISSA \n - ZIZO \n - El BOUNDO9IA 16 \n - TEDI 150 ? \n - NEGA3REK YA RBK \n - CHAWALA HADA \n - JAMAL \n ....**");
+        message.reply(" **\n - VERDINO \n - AISSA \n - ZIZO \n - El BOUNDO9IA 16 \n - TEDI 150 ? \n - NEGA3REK YA RBK \n - CHAWALA HADA \n - JAMAL \n ....**");
         console.log("serveur effectué");
     }
     if (message.content ===  "fadi"){
@@ -84,7 +84,7 @@ bot.on('message', message => {
         console.log("racim effectué !");
     }
     if (message.content === "el boundou9ia 16"){
-        message.reply("YBEYENLEK BELI VALABEL !");
+        message.reply("**YBEYENLEK BELI VALABLE !**");
         console.log("canon16 effectué !");
     }
     if (message.content === "chawala hada?"){
@@ -104,12 +104,16 @@ bot.on('message', message => {
         console.log("mananuk effectué !");
     }
     if (message.content === "canon16"){
-        message.reply("YBEYENLEK BELI VALABEL !");
+        message.reply("**YBEYENLEK BELI VALABEL !**");
         console.log("canon16 effectué !");
     }
     if (message.content === prefix + "n9ocha"){
         message.reply("**JORDAN**");
         console.log("no9che effectué !");
+    }
+        if (message.content === prefix + "MASQUER"){
+        message.reply(" **\n - lotfi \n - aymen \n - fadi \n - 3ami 7med \n - lbodi \n - mananuk \n - el boundou9ia 16/canon16 \n - TEDI 150 ? \n - chawala hada? \n - Verdino2 \n - jamel \n ZIZO \n VERDINO **");
+        console.log("masquer effectué");
     }
 
 
