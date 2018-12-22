@@ -12,7 +12,7 @@ bot.on("ready", function() {
 
 bot.on("guildMemberAdd", function(member) {
     member.guild.channels.find("name", "bienvenue").sendMessage(member.toString() + " Bienvenue sur Notre discord Yawlide el 9ahba ! :white_check_mark:");
-    member.addRole(member.guild.roles.find("name", "● ZIZO LITE ●"));
+    member.addRole(member.guild.roles.find("name", "● VISITEUR ●"));
 });
 
 bot.on("guildMemberRemove", function(member) {
